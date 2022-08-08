@@ -2,7 +2,7 @@
 
 This background app demonstrates one approach that could be used to notify a specific agent that they have been assigned a ticket in Zendesk Support. This is achieved using notification events together with the notify REST API endpoint.
 
-Through the use of triggers together with webhooks in Zendesk support, the app receives a notification via the notify REST API endpoint which contains the app ID, event ID, body, and agent_id properties. A custom event handler receives the event, which executes the notify action to generate a notification in the agent interface. This notification will be visible only to the agent who has been assigned the ticket.
+Through the use of triggers together with webhooks in Zendesk Support, the app receives a notification via the notify REST API endpoint which contains the app_id, event, body, and agent_id properties. A custom event handler receives the event, which executes the notify action to generate a notification in the agent interface. This notification will be visible only to the agent who has been assigned the ticket.
 
 ## Getting started
 
@@ -36,7 +36,7 @@ zcli apps:create
 
 [Creating webhooks in Admin Center](https://support.zendesk.com/hc/en-us/articles/4408839108378-Creating-webhooks-in-Admin-Center)
 
-4. Create a trigger to notify webhook when ticket assignment occurs. You will need to provide the specific app_id value of your app to the JSON body.
+4. Create a trigger to notify the webhook when ticket assignment occurs. You will need to provide the specific app_id value of your app to the JSON body.
 
 <img src="trigger.png" alt="trigger screenshot" width="500"/>
 
