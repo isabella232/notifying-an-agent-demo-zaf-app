@@ -1,0 +1,19 @@
+{
+	"name": "zcli-test-notifications",
+	"author": {
+		"name": "Tipene",
+		"email": "tipene.hughes@zendesk.com",
+		"url": "https://www.tipenehughes.com"
+	},
+	"defaultLocale": "en",
+	"private": true,
+	"location": {
+		"support": {
+			"background": {
+				"url": "assets/iframe.html"
+			}
+		}
+	},
+	"version": "1.0.0",
+	"frameworkVersion": "2.0"
+}
